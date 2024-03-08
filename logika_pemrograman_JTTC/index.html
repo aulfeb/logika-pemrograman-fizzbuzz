@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logika Pemrograman JTTC</title>
+</head>
+<body>
+    <h1>Logika Pemrograman - FizzBuzz</h1>
+    <div id="output"></div>
+
+    <script>
+        for (let i = 1; i <= 100; i++) {
+            let output = '';
+            if (i % 3 === 0) {
+                output += 'Fizz';
+            }
+            if (i % 5 === 0) {
+                output += 'Buzz';
+            }
+            if (output === '') {
+                output = i;
+            }
+            document.getElementById('output').innerHTML += output + '<br>';
+        }
+    </script>
+</body>
+</html>
